@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VibeCheck Trips</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <h1>My Trips</h1>
+  <button id="logout">Log Out</button>
+  <pre id="output">Loading…</pre>
+
+  <script>
+    let supabase;
+
+    // 1) Fetch config
+    async function init() {
+      const res = await fetch('/config');
+      const cfg = await res.json();
+      supabase = window.supabase = supabaseJs.createClient(
+        cfg.supabaseUrl,
+        cfg.supabaseAnonKey
+      );
+      loadTrips();
+    }
+
+    // 2) Load trips with JWT
+    async function loadTrips() {
+      const token = localStorage.getItem('sb_token');
+      if (!token) {
+        window.location.href = '/';
+        return;
+      }
+      const res = await fetch('/api/trips', {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      document.getElementById('output').textContent = await res.text();
+    }
+
+    // 3) Log out
+    document.getElementById('logout').onclick = () => {
+      localStorage.removeItem('sb_token');
+      window.location.href = '/';
+    };
+
+    init().catch(err => {
+      document.getElementById('output').textContent = 'Init error: ' + err;
+    });
+  </script>
+</body>
+</html>

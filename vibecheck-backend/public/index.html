@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VibeCheck Login</title>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form">
+    <input type="email"    id="email"    placeholder="Email"    required />
+    <input type="password" id="password" placeholder="Password" required />
+    <button type="submit">Sign In</button>
+  </form>
+  <pre id="message"></pre>
+
+  <script>
+    let supabase;
+
+    // 1) Fetch config
+    fetch('/config')
+      .then(r => r.json())
+      .then(cfg => {
+        supabase = window.supabase = supabaseJs.createClient(
+          cfg.supabaseUrl,
+          cfg.supabaseAnonKey
+        );
+      })
+      .catch(err => {
+        document.getElementById('message').textContent = 'Config load error: ' + err;
+      });
+
+    // 2) Handle form submit
+    document.getElementById('login-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const email    = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      document.getElementById('message').textContent = 'Signing in…';
+
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error) {
+        document.getElementById('message').textContent = 'Error: ' + error.message;
+        return;
+      }
+
+      // 3) Store token & go to app
+      localStorage.setItem('sb_token', data.session.access_token);
+      window.location.href = '/app.html';
+    });
+  </script>
+</body>
+</html>
