@@ -21,7 +21,6 @@ async function insertRelation(tripId, viberId, supabaseClient) {
     }
 }
 
-
 export async function GET(event) {
   console.log('GET /api/trips called');
 
@@ -297,7 +296,7 @@ export async function DELETE(event) {
     const tripId = body.tripId;
 
     if (!tripId) {
-      return json({ error: 'tripId è richiesto' }, { status: 400 });
+      return json({ error: 'tripId is requested' }, { status: 400 });
     }
 
     // Elimina direttamente il trip, i membri associati verranno eliminati automaticamente
