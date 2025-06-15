@@ -6,5 +6,13 @@ export default defineConfig({
 	plugins: [
 		tailwindcss(),
 		sveltekit()
-	]
+	],
+	 build: {
+		target: 'esnext' // Permette l'uso di top-level await
+	},
+	optimizeDeps: {
+		esbuildOptions: {
+		target: 'esnext' // Assicura che esbuild supporti top-level await
+		}
+	}
 });
