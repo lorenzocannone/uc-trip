@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fetchTrips, tripsStore } from '$lib/stores/tripsStore';
-	import TripCard from './TripCard.svelte';
-	import Sidebar from './TripSidebar.svelte'
+	import TripCard from '../TripCard.svelte';
+	import Sidebar from '../TripSidebar.svelte'
 	import Plus from '@lucide/svelte/icons/plus';
 	import { type Trip } from '$lib/classes/classes'
     import { onMount } from 'svelte';

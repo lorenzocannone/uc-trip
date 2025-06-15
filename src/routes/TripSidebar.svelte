@@ -109,10 +109,10 @@
       <div class="flex gap-2">
         {#if trip.role == 'owner'}
         <button class="btn bg-primary-500 text-surface-50" onclick={() => handleOpenModal(handleUpdateTrip, 'update')}>Update Trip</button>
-        <a href="/{trip.id}"><button class="btn bg-secondary-500 text-surface-50">Update Vibes</button></a>
+        <a href="/trips/{trip.id}"><button class="btn bg-secondary-500 text-surface-50">Update Vibes</button></a>
         <button class="btn bg-error-500 text-surface-50" onclick={() => handleOpenModal(handleDeleteTrip, 'delete')}>Delete Trip</button>
         {:else}
-        <a href="/{trip.id}"><button class="btn bg-secondary-500 text-surface-50">See Vibes</button></a>
+        <a href="/trips/{trip.id}"><button class="btn bg-secondary-500 text-surface-50">See Vibes</button></a>
         {/if}
       </div>
       {/if}

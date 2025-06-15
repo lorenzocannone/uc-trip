@@ -3,7 +3,7 @@
   import { page } from '$app/state';
   import { vibesStore, initVibesStore, deleteVibe, fetchVibes } from '$lib/stores/vibesStore';
   import { tripsStore } from '$lib/stores/tripsStore';
-  import Sidebar from '../VibeSidebar.svelte';
+  import Sidebar from '../../VibeSidebar.svelte';
   import vibeTypes from '$lib/data/vibeTypes.json';
   import { MoonStar, EggFried, Sandwich, Utensils, Wine, FlameKindling, MapPin, Trash2, Pencil, Eye } from '@lucide/svelte';
   import Plus from '@lucide/svelte/icons/plus';

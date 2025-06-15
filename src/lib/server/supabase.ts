@@ -1,7 +1,6 @@
-
 import { createSupabaseServerClient } from '@supabase/auth-helpers-sveltekit';
 import type { Cookies, RequestEvent } from '@sveltejs/kit';
-import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$env/static/private';
+import { PUBLIC_SUPABASE_URL, PUBLIC_SUPABASE_ANON_KEY } from '$env/static/public';
 
 /**
  * Crea un client Supabase autenticato, utilizzando i cookie della request.
@@ -12,8 +11,8 @@ import { SUPABASE_URL, SUPABASE_ANON_KEY } from '$env/static/private';
  */
 export function getSupabaseClient(event: RequestEvent) {
   return createSupabaseServerClient({
-    supabaseUrl: SUPABASE_URL,
-    supabaseKey: SUPABASE_ANON_KEY,
+    supabaseUrl: PUBLIC_SUPABASE_URL,
+    supabaseKey: PUBLIC_SUPABASE_ANON_KEY,
     event
   });
 }
