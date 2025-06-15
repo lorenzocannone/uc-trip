@@ -1,0 +1,26 @@
+[
+    {
+        "type": "breakfast",
+        "class": "bg-linear-to-tr from-lime-300 to-red-400 45-deg"
+    },
+    {
+        "type": "lunch",
+        "class": "bg-linear-to-tr from-rose-400 to-amber-700 45-deg"
+    },
+    {
+        "type": "happy hour",
+        "class": "bg-linear-to-tr from-orange-500 to-purple-700 45-deg"
+    },
+    {
+        "type": "dinner",
+        "class": "bg-linear-to-tr from-teal-600 to-sky-800 45-deg"
+    },
+    {
+        "type": "night",
+        "class": "bg-linear-to-tr from-indigo-900 to-sky-600 45-deg"
+    },
+    {
+        "type": "activity",
+        "class": "bg-linear-to-tr from-amber-500 to-pink-600 45-deg"
+    }
+]

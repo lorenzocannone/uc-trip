@@ -1,22 +1,23 @@
 <script lang="ts">
 	import Header from './Header.svelte';
-	import '../app.css';
+	import './../app.css';
 	let { children } = $props();
-	import Sidebar from './Sidebar.svelte';
-	let sidebar_show = false;
+	
 </script>
 
 <div class="app grid h-screen grid-rows-[auto_1fr_auto]">
 	<Header />
-	<div class="grid grid-cols-1 md:grid-cols-[auto_1fr]">
+	<div class="h-full p-8">
 	<!-- Left Sidebar. -->
-	<main>
+	<main class="h-full">
 		{@render children()}
 	</main>
 	</div>
 	<footer>
 	</footer>
 </div>
+
+  
 
 <style>
 	.app {
@@ -29,9 +30,7 @@
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}

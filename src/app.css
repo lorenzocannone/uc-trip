@@ -3,7 +3,7 @@
 @import '@skeletonlabs/skeleton';
 @import '@skeletonlabs/skeleton/optional/presets';
 @import '../vibecheck-theme';
-
+@import '@skeletonlabs/skeleton/optional/presets';
 
 
 dialog,

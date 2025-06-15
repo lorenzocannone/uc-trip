@@ -1,0 +1,66 @@
+[  
+    {
+        "id": "Alex",
+        "first_name": "Amanpreet",
+        "last_name": "Singh",
+        "label": "Alex",
+        "mail": "amanismyname@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Vale",
+        "first_name": "Valentina",
+        "last_name": "Capradossi",
+        "label": "Vale",
+        "mail": "jane.smith@example.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Lore",
+        "first_name": "Lorenzo",
+        "last_name": "Cannone",
+        "label": "Lore",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Rodolfa",
+        "first_name": "Maria",
+        "last_name": "Sansoni",
+        "label": "Rodolfa",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Sofi",
+        "first_name": "Sofia",
+        "last_name": "De Luca",
+        "label": "Sofi",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Gallo",
+        "first_name": "Andrea",
+        "last_name": "Galliani",
+        "label": "Gallo",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Mike",
+        "first_name": "Michele",
+        "last_name": "De Benedet",
+        "label": "Mike",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    },
+    {
+        "id": "Rose",
+        "first_name": "Alessio",
+        "last_name": "Rosatelli",
+        "label": "Rose",
+        "mail": "lorenzo.cannone9@gmail.com",
+        "img": "https://img.freepik.com/vettori-premium/iconica-del-profilo-avatar-in-stile-piatto-illustrazione-vettoriale-del-profilo-utente-femminile-su-sfondo-isolato-concept-aziendale-del-profilo-femminile_157943-38866.jpg"
+    }
+]
